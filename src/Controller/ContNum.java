@@ -7,7 +7,7 @@ public class ContNum {
     }
 
     public int ContaNumIgual(int n, int v){
-        if (n < 10 ){
+        if (n < 10 ){ //condição de parada
             if (n == v){
                 return 1;
             }
@@ -16,7 +16,7 @@ public class ContNum {
             }
         }
         else {
-            int quantidade= ContaNumIgual(n / 10, v);
+            int quantidade= ContaNumIgual(n / 10, v); //chamada da recursiva
 
             if (n % 10 == v){
                 return quantidade + 1;
